@@ -10,7 +10,7 @@ export default function Pricing() {
             <Header />
             <Banner title="PRICING PLANS" pathName="Pricing Plans" />
             <Service />
-            <Contact />
+            {/* <Contact /> */}
             <Footer />
         </>
     );

@@ -98,10 +98,10 @@ export default [
             {
                 label: "Utilities",
                 dropdown: [
-                    {
-                        label: "404",
-                        url: "/not-found",
-                    },
+                    // {
+                    //     label: "404",
+                    //     url: "/not-found",
+                    // },
                     {
                         label: "FAQ",
                         url: "/faq",

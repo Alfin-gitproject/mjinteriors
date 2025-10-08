@@ -30,10 +30,10 @@ export default function ArticleCard({ data }) {
                 <h3 className="blog-card__title">
                     <Link href="/blog-details">{data.title}</Link>
                 </h3>
-                <Link href="/blog-details" className="btn-link">
+                {/* <Link href="/blog-details" className="btn-link">
                     Read More
                     <i className="fa-solid fa-arrow-right icon-arrow-corner" />
-                </Link>
+                </Link> */}
             </div>
         </div>
     );

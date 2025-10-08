@@ -1,0 +1,39 @@
+/* Service.css */
+.blog-section {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card-wrapper > div {
+    flex: 1;
+}
+
+/* Tablet (576px - 767px) */
+@media (max-width: 767px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile (<576px) */
+@media (max-width: 575px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

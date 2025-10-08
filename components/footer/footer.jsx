@@ -4,23 +4,23 @@ import Link from "next/link";
 const footerLinks = [
     {
         label: "Pricing Plans",
-        url: "/",
+        url: "/pricing",
     },
+    // {
+    //     label: "Projects",
+    //     url: "/",
+    // },
     {
-        label: "Projects",
-        url: "/",
+        label: "about us",
+        url: "/about",
     },
-    {
-        label: "Press Media",
-        url: "/",
-    },
-    {
-        label: "Career",
-        url: "/",
-    },
+    // {
+    //     label: "Career",
+    //     url: "/",
+    // },
     {
         label: "Contact Us",
-        url: "/",
+        url: "/contact",
     },
 ];
 

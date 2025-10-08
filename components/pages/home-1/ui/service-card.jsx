@@ -15,13 +15,12 @@ export default function ServiceCard({ data }) {
             <div className="service-card__body">
                 <h3 className="service-card__title">{data.title}</h3>
                 <p>
-                    Lorem ipsum dolor adipiscing elit suspendisse varius enim
-                    elementum tristique. Duis cursus
+                    {data.paragraph}
                 </p>
             </div>
             <div className="service-card__footer">
                 <Link
-                    href="/service-details"
+                    href={data.url || "/service-details"} 
                     className="btn btn-primary btn-small w-100 space-between hvr-fill-black"
                 >
                     view details

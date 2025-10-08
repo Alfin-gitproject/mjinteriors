@@ -19,7 +19,7 @@ export default function AboutUs() {
             <Stats style="about" />
             <Video />
             <Philosophy style="about" />
-            <Award />
+            {/* <Award /> */}
             <Testimonial />
             <Faq />
             <Cta />

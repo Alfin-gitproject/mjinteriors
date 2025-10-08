@@ -7,7 +7,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Header />
-            <Banner title="EXTERIOR DESIGN" pathName="Exterior Design" />
+            <Banner title="INTERIOR DESIGN" pathName="Interior Design" />
             <ServiceDetail />
             <Footer />
         </>

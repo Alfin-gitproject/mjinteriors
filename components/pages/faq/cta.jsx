@@ -17,10 +17,10 @@ export default function Cta() {
                             </div>
                             <div className="cta-content-04__button">
                                 <Link
-                                    href="/"
+                                    href="/contact"
                                     className="btn btn-primary hvr-fill-black"
                                 >
-                                    Have any question?
+                                    contact us?
                                     <i className="fa-solid fa-arrow-right icon-arrow-corner" />
                                 </Link>
                             </div>

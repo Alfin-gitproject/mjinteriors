@@ -16,7 +16,7 @@ export default function About() {
                                 <Image
                                     height={214}
                                     width={210}
-                                    src="/image/home-1/about-image.png"
+                                    src="/image/home-2/about-image.png"
                                     alt="structure"
                                     className="w-100 h-auto"
                                 />
@@ -33,23 +33,18 @@ export default function About() {
                                         about company
                                     </span>
                                     <h2 className="content-title heading-md mb-32">
-                                        We design buildings and interiors,
-                                        landscapes and streetscapes
+                                     Crafting Personalized Interiors with Style and Functionality
                                     </h2>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Suspendisse varius enim
-                                        in eros elementum tristique. Duis
-                                        cursus, mi quis viverra ornare, eros
-                                        dolor interdum nulla, ut commodo
+                                       our Interior Design service transforms private residences into bespoke spaces that reflect your unique vision. We blend style, comfort, and functionality through personalized consultations, detailed mood boards, and 3D renderings, ensuring every design elevates your lifestyle with elegance and practicality
                                     </p>
                                 </div>
                                 <div className="content-button-block">
                                     <Link
-                                        href="/about"
+                                        href="/contact"
                                         className="btn btn-primary hvr-fill-black"
                                     >
-                                        about company
+                                        Contact us
                                         <i className="fa-solid fa-arrow-right icon-arrow-corner" />
                                     </Link>
                                 </div>

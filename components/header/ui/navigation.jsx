@@ -4,13 +4,13 @@ import { isParentActive } from "@/lib/is-menu-active";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-/** Customize what to show/hide per parent label */
 const navRules = {
+  hide: ["Team", "Blog"], // Hide Team and Blog globally at all levels
   Home: {
     hideAll: true, // Remove dropdown for Home
   },
   Pages: {
-    hide: ["Portfolio", "Product", "Products", "Product section"],
+    hide: ["Portfolio", "Product", "Products", "Product section", "Team","Testimonial"], // Hide Team under Pages (redundant but kept for clarity)
     Utilities: {
       showOnly: ["FAQ"], // Only show FAQ under Utilities
     },
@@ -22,6 +22,12 @@ function applyRules(parentLabel, children = []) {
   const rules = navRules[parentLabel] || {};
   let out = [...children];
 
+  // Apply global hide rule
+  if (navRules.hide?.length) {
+    out = out.filter((c) => !navRules.hide.includes(c.label));
+  }
+
+  // Apply parent-specific rules
   if (rules?.showOnly?.length) {
     out = out.filter((c) => rules.showOnly.includes(c.label));
   }
@@ -53,9 +59,12 @@ export default function Navigation() {
     item.label === "Home" ? { ...item, url: "/" } : item
   );
 
+  // Apply global hide rule to top-level items
+  const filteredNavigation = applyRules("", updatedNavigation);
+
   return (
     <ul className="site-menu-main">
-      {updatedNavigation?.map((item, i) => {
+      {filteredNavigation?.map((item, i) => {
         const hasDropdown = !!item?.dropdown?.length;
         const lvl1Children = hasDropdown ? applyRules(item.label, item.dropdown) : [];
 

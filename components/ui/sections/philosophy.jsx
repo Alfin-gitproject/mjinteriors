@@ -2,7 +2,7 @@ import { philosophyProgress } from "@/data/site";
 import classNames from "classnames";
 
 export default function Philosophy({ style }) {
-    
+
     // style of philosophy section
     const className = classNames("content-section", {
         "padding-bottom-140": style === "home-1",
@@ -21,12 +21,10 @@ export default function Philosophy({ style }) {
                         <div className="content-text-block text-center text-lg-start">
                             <span className="subtitle">our Philosophy</span>
                             <h2 className="content-title heading-md text-black mb-32">
-                                Design Studio Specialising in Private Residences
+                                Crafting Timeless Interiors for Private Residences
                             </h2>
                             <p>
-                                Lorem ipsum dolor sit consectetur adipiscing
-                                varius eros elementum tristique. Duis cursus, mi
-                                quis viverra
+                                At our design studio, we believe in transforming private residences into spaces that reflect individuality and comfort. By blending innovative design with timeless elegance, we create interiors that inspire and endure, tailored to your unique lifestyle
                             </p>
                         </div>
                     </div>

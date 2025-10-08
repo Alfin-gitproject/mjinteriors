@@ -8,14 +8,13 @@ import { usePathname } from "next/navigation";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { useDispatch, useSelector } from "react-redux";
 
-// ✅ Control here which children to show/hide per parent label
 const sidebarRules = {
+  hide: ["Team", "Blog"], // Hide Team and Blog globally at all levels
   Home: {
-    showOnly: ["Home 1"], // only this child under Home
-    limit: 1,             // hard cap of 1 child
+    hideAll: true, // Remove dropdown for Home
   },
   Pages: {
-    hide: ["Portfolio", "Product", "Products", "Product section"], // hide these
+    hide: ["Portfolio", "Product", "Products", "Product section","Testimonial"], // Hide these
     Utilities: {
       showOnly: ["FAQ"], // Only show FAQ under Utilities
     },
@@ -27,6 +26,12 @@ function applyRules(parentLabel, children = []) {
   const rules = sidebarRules[parentLabel] || {};
   let out = [...children];
 
+  // Apply global hide rule
+  if (sidebarRules.hide?.length) {
+    out = out.filter((c) => !sidebarRules.hide.includes(c.label));
+  }
+
+  // Apply parent-specific rules
   if (rules?.showOnly?.length) {
     out = out.filter((c) => rules.showOnly.includes(c.label));
   }
@@ -34,9 +39,6 @@ function applyRules(parentLabel, children = []) {
     out = out.filter((c) => !rules.hide.includes(c.label));
   }
   if (rules?.hideAll) return [];
-  if (typeof rules?.limit === "number") {
-    out = out.slice(0, rules.limit);
-  }
 
   // Apply nested rules to children with dropdowns
   return out.map((item) => {
@@ -60,12 +62,20 @@ export default function SidebarNavigation() {
 
   const onNav = () => dispatch(toggleSidebar());
 
+  // Update navigation data to set Home 1 as default
+  const updatedNavigation = navigation.map((item) =>
+    item.label === "Home" ? { ...item, url: "/" } : item
+  );
+
+  // Apply global hide rule to top-level items
+  const filteredNavigation = applyRules("", updatedNavigation);
+
   const renderItems = (items, parentLabel = "") =>
     items?.map((item, i) => {
       if (item?.dropdown) {
         const filtered = applyRules(parentLabel || item.label, item.dropdown);
 
-        // if nothing left after filtering, render parent as a simple item (if it has url) or skip
+        // If nothing left after filtering, render parent as a simple item (if it has url) or skip
         if (filtered.length === 0) {
           return item.url ? (
             <MenuItem
@@ -104,12 +114,12 @@ export default function SidebarNavigation() {
     <div className={`sidebar-menu ${isSidebarActive ? "active" : ""}`}>
       <div className="sidebar-logo">
         <Link href="/">
-          <Image height={30} width={172} src="image/logo-dark.svg" alt="logo" />
+          <Image height={30} width={172} src="/image/logo1.png" alt="logo" />
         </Link>
       </div>
 
       <Sidebar>
-        <Menu>{renderItems(navigation)}</Menu>
+        <Menu>{renderItems(filteredNavigation)}</Menu>
       </Sidebar>
     </div>
   );
