@@ -10,7 +10,7 @@ export default function ArchitecturalPlan() {
               <Image
                 height={1068}
                 width={800}
-                src="/image/service/archieture.jpg"
+                src="/image/service/archieture.webp"
                 alt="Architectural Plan"
                 className="w-100 h-auto"
               />

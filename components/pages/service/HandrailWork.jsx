@@ -10,7 +10,7 @@ export default function HandrailWork() {
               <Image
                 height={1068}
                 width={800}
-                src="/image/service/handrail.jpg"
+                src="/image/service/handrail.webp"
                 alt="Handrail Work"
                 className="w-100 h-auto"
               />

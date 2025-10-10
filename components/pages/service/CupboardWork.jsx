@@ -10,7 +10,7 @@ export default function CupboardWork() {
               <Image
                 height={1068}
                 width={800}
-                src="/image/service/cupboard.jpg"
+                src="/image/service/cupboard.webp"
                 alt="Cupboard Work"
                 className="w-100 h-auto"
               />

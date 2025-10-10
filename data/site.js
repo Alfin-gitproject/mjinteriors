@@ -394,24 +394,24 @@ export const blogs = [
     },
 ];
 
-export const stats = [
+export const stats =[
     {
-        count: 174,
-        title: "Employer with over 10 years of experience",
+        count: 5,
+        title: "Years in the interior work business"
     },
     {
-        count: 10,
-        title: "Employer with over 10+ years of experience",
+        count: 50,
+        title: "Interior projects completed successfully"
     },
     {
-        count: 690,
-        title: "Various industries completed in 2022",
+        count: 45,
+        title: "Satisfied clients in 2024"
     },
     {
-        count: 72,
-        title: "Over million dollar value on investment",
-    },
-];
+        count: 3,
+        title: "Types of services offered ( Interior design, Architect plan, Gypsum work )"
+    }
+]
 
 export const awards = [
     {

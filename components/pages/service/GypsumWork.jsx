@@ -10,7 +10,7 @@ export default function GypsumWork() {
               <Image
                 height={1068}
                 width={800}
-                src="/image/service/gypsum.jpg"
+                src="/image/service/gypsum.webp"
                 alt="Gypsum Work"
                 className="w-100 h-auto"
               />

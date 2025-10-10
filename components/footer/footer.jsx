@@ -65,7 +65,7 @@ export default function Footer() {
                                     <Image
                                         height={57}
                                         width={34}
-                                        src="/image/arcatec.svg"
+                                        src="/image/MJ Interior LOGO horizontal-03.webp"
                                         alt="image alt"
                                         className="h-auto"
                                     />

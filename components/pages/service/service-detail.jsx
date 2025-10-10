@@ -10,7 +10,7 @@ export default function ServiceDetail() {
               <Image
                 height={606}
                 width={1116}
-                src="/image/service/all-services.png"
+                src="/image/1-02.webp"
                 alt="Our Services"
                 className="w-100 h-auto"
               />
@@ -31,7 +31,7 @@ export default function ServiceDetail() {
                 <Image
                   height={170}
                   width={170}
-                  src="/image/service/interior-design.png"
+                  src="/image/1-03.webp"
                   alt="Interior Design"
                   className="w-100 h-auto"
                 />
@@ -40,7 +40,7 @@ export default function ServiceDetail() {
                 <Image
                   height={170}
                   width={170}
-                  src="/image/service/gypsum-work.png"
+                  src="/image/1-04.webp"
                   alt="Gypsum Work"
                   className="w-100 h-auto"
                 />

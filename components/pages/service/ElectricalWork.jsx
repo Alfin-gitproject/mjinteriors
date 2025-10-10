@@ -10,7 +10,7 @@ export default function ElectricalWork() {
               <Image
                 height={1068}
                 width={800}
-                src="/image/service/electrical.jpg"
+                src="/image/service/electrical.webp"
                 alt="Electrical Work"
                 className="w-100 h-auto"
               />

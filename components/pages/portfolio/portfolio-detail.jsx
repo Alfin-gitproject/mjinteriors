@@ -19,7 +19,7 @@ export default function PortfolioDetail() {
               <Image
                 height={606}
                 width={1116}
-                src="/image/portfolio/residential-project-showcase.png"
+                src="/image/1-01.webp"
                 alt="Residential Project Showcase"
                 className="mb-res-60 w-100 h-auto"
               />
