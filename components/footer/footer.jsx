@@ -68,11 +68,12 @@ export default function Footer() {
                                         src="/image/MJ Interior LOGO horizontal-03.webp"
                                         alt="image alt"
                                         className="h-auto"
+                                        style={{ flexBasis: "fit-content" }}
                                     />
                                     <span>MJ INTERIORS</span>
                                 </div>
                                 <p>
-                                   From homes to workplaces, every space we design is crafted with the same passion, precision, and attention to detail.
+                                    From homes to workplaces, every space we design is crafted with the same passion, precision, and attention to detail.
                                 </p>
                             </div>
                             <form action="#" className="newsletter-form-1">
@@ -98,12 +99,12 @@ export default function Footer() {
                                         <p>
                                             Chunagamvally
                                             Aluva,kochi
-                                            
+
                                             <br />
-                                           Kerala,
-                                          
+                                            Kerala,
+
                                             <br />
-                                             683112
+                                            683112
                                         </p>
                                     </div>
                                     <div className="single-block">
