@@ -32,7 +32,7 @@ export default function ProjectCard({ data }) {
                     </div>
                 </div>
                 <div className="project-card__body-bottom">
-                    <span className="project-card__date">2019</span>
+                    <span className="project-card__date">2024</span>
                     <Link href="/portfolio-details" className="btn-link">
                         View Details
                         <i className="fa-solid fa-arrow-right icon-arrow-corner" />

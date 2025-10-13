@@ -19,7 +19,7 @@ export default function ProjectCard({ data }) {
                         <h3 className="project-card__title">Brutalist lobby</h3>
                         <span className="project-card__category">building</span>
                     </div>
-                    <span className="project-card__date">2019</span>
+                    <span className="project-card__date">2024</span>
                 </div>
                 <div className="project-card__body-bottom">
                     <span className="project-card__button  hvr-fill-black">

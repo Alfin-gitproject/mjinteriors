@@ -94,14 +94,14 @@ export const services = [
 ];
 export const service2 =  [
   {
-    title: "Interior Design",
-    description: "Transforming your home with bespoke designs that blend style, comfort, and functionality.",
-    price: "75,000",
-    features: [
-      "Custom Design Concepts",
-      "3D Renderings and Mood Boards",
-      "Material and Furniture Selection",
-      "Full Project Coordination",
+   title: "Gypsum Work",
+  description: "Elevate your spaces with expert gypsum work, offering seamless drywall installations, intricate ceiling designs, and durable wall solutions.",
+  price: "200,000",
+  "features": [
+    "Custom Gypsum Ceiling Designs",
+    "Drywall Installation and Finishing",
+    "Decorative Gypsum Wall Panels",
+    "Professional Repair and Maintenance"
     ],
   },
   {
