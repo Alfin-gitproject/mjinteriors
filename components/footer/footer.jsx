@@ -28,18 +28,14 @@ const footerSocialLinks = [
     {
         label: "Facebook",
         icon: "fa-brands fa-square-facebook",
-        url: "/",
+        url: "https://www.facebook.com/share/16WjtAheyA/",
     },
     {
-        label: "Twitter",
-        icon: "fa-brands fa-twitter",
-        url: "/",
+        label: "Whatsapp",
+        icon: "fa-brands fa-whatsapp",
+       url: "https://wa.me/+917560902486?text=Hello%20MJ%20Interiors%2C%20I%27m%20interested%20in%20your%20interior%20work%20services",
     },
-    {
-        label: "Youtube",
-        icon: "fa-brands fa-youtube",
-        url: "/",
-    },
+    
 ];
 
 export default function Footer() {
