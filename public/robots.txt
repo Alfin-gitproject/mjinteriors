@@ -2,6 +2,78 @@
 User-agent: *
 Allow: /
 
+# *
+User-agent: *
+Disallow: /private/*
+
+# *
+User-agent: *
+Disallow: /blog-details
+
+# *
+User-agent: *
+Disallow: /blog-grid
+
+# *
+User-agent: *
+Disallow: /team
+
+# *
+User-agent: *
+Disallow: /home-3
+
+# *
+User-agent: *
+Disallow: /blog-list-2
+
+# *
+User-agent: *
+Disallow: /testimonial
+
+# *
+User-agent: *
+Disallow: /not-found
+
+# *
+User-agent: *
+Disallow: /product-details
+
+# *
+User-agent: *
+Disallow: /team-details
+
+# *
+User-agent: *
+Disallow: /checkout
+
+# *
+User-agent: *
+Disallow: /blog-list
+
+# *
+User-agent: *
+Disallow: /cart
+
+# *
+User-agent: *
+Disallow: /home-2
+
+# *
+User-agent: *
+Disallow: /product
+
+# *
+User-agent: *
+Disallow: /portfolio-details
+
+# *
+User-agent: *
+Disallow: /portfolio-2
+
+# *
+User-agent: *
+Disallow: /portfolio-1
+
 # Host
 Host: https://mjinteriors.co.in
 
