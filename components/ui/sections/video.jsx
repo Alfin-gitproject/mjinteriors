@@ -14,7 +14,7 @@ export default function Video() {
                         <Image
                             height={675}
                             width={1349}
-                            src="/image/video/video-image.png"
+                            src="/image/home-1/in-1.webp"
                             alt="video"
                             className="w-100 h-auto"
                         />
@@ -28,7 +28,7 @@ export default function Video() {
                     <FsLightbox
                         toggler={toggler}
                         sources={[
-                            "https://www.youtube.com/watch?v=zo9dJFo8H8g",
+                            "/image/video/Comp 1.mp4",
                         ]}
                     />
                 </div>

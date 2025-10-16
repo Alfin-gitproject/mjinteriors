@@ -13,7 +13,7 @@ export default function Testimonial() {
             className="testimonial-section-01 overlay bg-fixed section-padding-140"
             style={{
                 backgroundImage:
-                    'url("image/home-1/testimonial-background.png")',
+                    'url("/image/home-1/in-2.webp")',
             }}
         >
             <div className="container">

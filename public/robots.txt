@@ -64,10 +64,6 @@ Disallow: /product
 
 # *
 User-agent: *
-Disallow: /portfolio-details
-
-# *
-User-agent: *
 Disallow: /portfolio-2
 
 # *
